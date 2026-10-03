@@ -143,6 +143,11 @@ select {
   object-fit: contain;
 }
 
+.brand-mark-seed img {
+  width: 40px;
+  height: 40px;
+}
+
 .brand-name {
   letter-spacing: -0.045em;
   font-size: 19px;
@@ -826,6 +831,11 @@ summary:focus-visible {
   .brand-mark img {
     width: 43px;
     height: 43px;
+  }
+
+  .brand-mark-seed img {
+    width: 32px;
+    height: 32px;
   }
 
   .brand-name {

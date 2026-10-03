@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="CheekPouch(볼주머니)는 내 기기의 원장 파일에 지출과 자산을 기록하는 로컬 우선 개인 가계부입니다. Windows용 alpha를 내려받을 수 있습니다."
+      content="CheekPouch(볼주머니)는 지출과 자산을 기록하고 한눈에 보여주는 로컬 우선 개인 가계부입니다. 원장은 내 기기에 있습니다."
     />
     <meta name="theme-color" content="#f7f6f3" />
     <title>CheekPouch · 내 기기에 두는 개인 원장</title>
-    <link rel="icon" href="assets/cheekpouch-docs-mascot.png" />
+    <link rel="icon" type="image/png" href="assets/favicon-32.png" />
     <link rel="stylesheet" href="assets/site.css" />
     <link rel="stylesheet" href="assets/landing.css" />
+    <script src="assets/landing.js"></script>
     <script type="module" src="assets/download.js"></script>
   </head>
   <body class="landing">
     <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
-    <header class="lp-top">
+    <header class="lp-top" data-top>
       <div class="lp-top-inner">
         <a class="wordmark" href="./" aria-label="CheekPouch 홈">
-          <span class="brand-mark" aria-hidden="true">
-            <img src="assets/cheekpouch-docs-mascot.png" alt="" />
+          <span class="brand-mark brand-mark-seed" aria-hidden="true">
+            <img src="assets/seed-hamster-mark.png" alt="" />
           </span>
           <span class="brand-name" aria-hidden="true">
             <span class="brand-name-cheek">Cheek</span
@@ -32,6 +33,16 @@
           <a href="docs/">문서</a>
           <a href="history/">버전 히스토리</a>
         </nav>
+        <a
+        class="lp-dl"
+        data-download-link
+        data-state="loading"
+        href="https://github.com/Haneol/CheekPouch-Site/releases"
+        ><svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M12 4.75v10.5M7.5 11 12 15.5l4.5-4.5M5 19.25h14" />
+        </svg>
+        <span data-download-label>다운로드</span></a
+        >
       </div>
     </header>
 
@@ -45,26 +56,12 @@
               <span class="lp-accent">내 기기</span> 안에.
             </h1>
             <p class="lp-lead">
-              CheekPouch(볼주머니)는 서버 계정 없이, 내가 고른 폴더의 원장
-              파일에 지출과 자산을 기록하고 조회하는 개인 가계부입니다. 지금은
-              Windows 데스크톱용 alpha를 내려받을 수 있습니다.
+              CheekPouch(볼주머니)는 지출과 자산을 기록하고 한눈에 보여주는
+              개인 가계부입니다. 서버 계정은 필요 없습니다.
             </p>
-            <div class="lp-actions">
-              <a
-                class="lp-button lp-button-primary"
-                data-download-link
-                href="https://github.com/Haneol/CheekPouch-Site/releases"
-              >
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M12 4.75v10.5M7.5 11 12 15.5l4.5-4.5M5 19.25h14" />
-                </svg>
-                Windows용 다운로드
-              </a>
-              <a class="lp-button lp-button-quiet" href="docs/">문서 보기</a>
-            </div>
-            <p class="lp-hero-meta">
-              <span data-download-brief>Windows 10/11 · 64비트</span>
-            </p>
+            <a class="lp-cue" href="#board"
+              >화면으로 둘러보기 <span aria-hidden="true">↓</span></a
+            >
           </div>
 
           <div class="lp-hero-art" aria-hidden="true">
@@ -72,79 +69,208 @@
             <span class="lp-disc"></span>
             <img
               class="lp-mascot"
-              src="assets/cheekpouch-docs-mascot.png"
+              src="assets/seed-hamster.webp"
               alt=""
-              width="420"
-              height="420"
+              width="720"
+              height="720"
             />
           </div>
         </div>
       </section>
 
-      <section class="lp-features" aria-labelledby="features-title">
-        <div class="lp-wrap">
-          <header class="lp-section-head">
-            <p class="lp-eyebrow">WHY CHEEKPOUCH</p>
-            <h2 id="features-title">기록은 내가, 보관도 내가.</h2>
-          </header>
+      <section class="lp-sec" id="board" aria-labelledby="board-title">
+        <div class="lp-wrap lp-sec-grid">
+          <div class="lp-sec-text" data-stagger>
+            <p class="lp-eyebrow" data-reveal>01 · 보드</p>
+            <h2 id="board-title" data-reveal>이번 달을 한눈에</h2>
+            <p data-reveal>
+              확인할 거래와 7일 안의 정기 결제를 맨 위에 올려 두고, 이번 달
+              지출·수입·순현금흐름과 카테고리별 비중을 보여줍니다.
+            </p>
+          </div>
+          <figure class="lp-shot" data-reveal>
+            <div class="lp-frame" data-parallax>
+              <div class="lp-frame-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>표본 데이터</span>
+              </div>
+              <img
+                src="assets/app/board.webp"
+                width="1600"
+                height="1000"
+                alt="보드 화면(표본 데이터). 확인 대기 2건과 7일 안 정기 결제 알림 아래에 이번 달 지출·수입·순현금흐름과 카테고리별 지출 막대가 있다."
+                decoding="async"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
 
-          <ol class="lp-feature-list">
-            <li class="lp-feature">
-              <span class="lp-feature-no" aria-hidden="true">01</span>
-              <div>
-                <h3>내 기기에 있는 원장</h3>
-                <p>
-                  원장은 내가 고른 폴더에 beancount 기반 파일로 저장됩니다.
-                  원장 비밀번호로 암호화하고, 언제든 표준 beancount 텍스트로
-                  내보낼 수 있어 CheekPouch를 떠나도 데이터가 남습니다.
-                </p>
+      <section
+        class="lp-sec lp-sec-tint lp-flip"
+        id="ledger"
+        aria-labelledby="ledger-title"
+      >
+        <div class="lp-wrap lp-sec-grid">
+          <div class="lp-sec-text" data-stagger>
+            <p class="lp-eyebrow" data-reveal>02 · 원장</p>
+            <h2 id="ledger-title" data-reveal>날짜별로 쌓이는 기록</h2>
+            <p data-reveal>
+              거래는 날짜별로 묶이고 카테고리와 결제수단이 붙습니다. 아직
+              확인하지 않은 거래는 “미확정”으로 따로 표시되고, 오른쪽 패널에서
+              이번 달 지출 구성을 바로 봅니다. 새 기록은 맨 아래 입력행에서 한
+              줄로 남깁니다.
+            </p>
+          </div>
+          <figure class="lp-shot" data-reveal>
+            <div class="lp-frame" data-parallax>
+              <div class="lp-frame-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>표본 데이터</span>
               </div>
+              <img
+                src="assets/app/ledger.webp"
+                width="1600"
+                height="1000"
+                alt="원장 화면(표본 데이터). 날짜별로 묶인 거래 목록에 카테고리와 결제수단, 미확정 표시가 있고 오른쪽에 지출 구성 패널, 아래에 입력행이 있다."
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="lp-sec" id="assets" aria-labelledby="assets-title">
+        <div class="lp-wrap lp-sec-grid">
+          <div class="lp-sec-text" data-stagger>
+            <p class="lp-eyebrow" data-reveal>03 · 자산</p>
+            <h2 id="assets-title" data-reveal>순자산과 계좌 잔액</h2>
+            <p data-reveal>
+              자산에서 부채를 뺀 순자산과 계좌·카드별 잔액을 한 화면에서
+              확인합니다. 포인트·적립과 카드 혜택은 탭으로 나뉘어 있습니다.
+            </p>
+          </div>
+          <figure class="lp-shot" data-reveal>
+            <div class="lp-frame" data-parallax>
+              <div class="lp-frame-bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>표본 데이터</span>
+              </div>
+              <img
+                src="assets/app/assets.webp"
+                width="1600"
+                height="1000"
+                alt="자산 화면(표본 데이터). 순자산과 자산·부채 합계, 계정·잔액 탭 아래에 계좌와 카드별 잔액이 있다."
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        class="lp-sec lp-sec-tint lp-flip"
+        id="ask"
+        aria-labelledby="ask-title"
+      >
+        <div class="lp-wrap lp-sec-grid">
+          <div class="lp-sec-text" data-stagger>
+            <p class="lp-eyebrow" data-reveal>04 · 묻고 찾기</p>
+            <h2 id="ask-title" data-reveal>조건으로 묻고, 글자로 찾기</h2>
+            <p data-reveal>
+              질의 문서는 기간과 계정 조건으로 거래를 묶어 막대와 표로
+              보여줍니다. 검색(Ctrl F)은 인터넷 없이 텍스트 일치로 동작합니다.
+            </p>
+            <p class="lp-aside" data-reveal>
+              온라인 AI 분석(Jev)은 선택 기능이며 승인된 계정에서만 켤 수
+              있습니다.
+            </p>
+          </div>
+          <div class="lp-shot-pair">
+            <figure class="lp-shot" data-reveal>
+              <div class="lp-frame" data-parallax>
+                <div class="lp-frame-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>표본 데이터</span>
+                </div>
+                <img
+                  src="assets/app/query.webp"
+                  width="1600"
+                  height="611"
+                  alt="질의 문서 화면(표본 데이터). 기간과 계정 조건으로 묶은 외식 지출이 가로 막대와 합계 표로 나온다."
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </figure>
+            <figure class="lp-shot lp-shot-over" data-reveal>
+              <div class="lp-frame" data-parallax="1.6">
+                <div class="lp-frame-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>표본 데이터</span>
+                </div>
+                <img
+                  src="assets/app/search.webp"
+                  width="1600"
+                  height="461"
+                  alt="검색 창(표본 데이터). ‘쿠팡’을 입력하면 텍스트가 일치한 거래 2건이 나온다."
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="lp-data" aria-labelledby="data-title">
+        <div class="lp-wrap">
+          <header class="lp-section-head" data-reveal>
+            <p class="lp-eyebrow">YOUR DATA</p>
+            <h2 id="data-title">보관은 내가 정합니다</h2>
+          </header>
+          <ol class="lp-data-list" data-stagger>
+            <li data-reveal>
+              <h3>내가 고른 폴더의 원장</h3>
+              <p>
+                원장은 원장 비밀번호로 암호화되어 저장됩니다. 언제든 표준
+                beancount 텍스트로 내보낼 수 있어 CheekPouch를 떠나도 데이터가
+                남습니다.
+              </p>
             </li>
-            <li class="lp-feature">
-              <span class="lp-feature-no" aria-hidden="true">02</span>
-              <div>
-                <h3>선택하는 Google 백업</h3>
-                <p>
-                  Google 로그인은 선택입니다. 연결하면 앱 전용 Google Drive 공간에
-                  암호화된 원장 백업을 두고 기기 사이에 동기화합니다. 연결하지
-                  않아도 기록과 조회는 그대로 쓸 수 있습니다.
-                </p>
-              </div>
-            </li>
-            <li class="lp-feature">
-              <span class="lp-feature-no" aria-hidden="true">03</span>
-              <div>
-                <h3>빠른 기록, 오프라인 검색</h3>
-                <p>
-                  하단 입력행에 내용·카테고리·결제수단·금액을 넣어 바로
-                  기록합니다. 검색은 인터넷 없이 텍스트 일치로 동작합니다.
-                </p>
-              </div>
+            <li data-reveal>
+              <h3>선택하는 Google 백업</h3>
+              <p>
+                Google 로그인은 선택입니다. 연결하면 앱 전용 Google Drive
+                공간에 암호화된 백업을 두고 기기 사이에 동기화합니다.
+              </p>
             </li>
           </ol>
-
-          <p class="lp-fineprint">
-            온라인 AI 분석(Jev)은 선택 기능이며 승인된 계정에서만 쓸 수
-            있습니다. 쓰지 않아도 모든 기본 기능은 그대로입니다.
-            <a href="privacy/">데이터 처리 방식 보기</a>
+          <p class="lp-fineprint" data-reveal>
+            자세한 처리 방식은
+            <a href="privacy/">개인정보처리방침</a>에서 확인할 수 있습니다.
           </p>
         </div>
       </section>
 
       <section class="lp-install" id="install" aria-labelledby="install-title">
-        <div class="lp-wrap">
+        <div
+          class="lp-wrap"
+          data-install-root
+          data-platform="windows"
+          data-reveal
+        >
           <header class="lp-section-head">
             <p class="lp-eyebrow">INSTALL</p>
-            <h2 id="install-title">Windows에 설치하기</h2>
-            <p>
-              최신 설치 파일은 GitHub Releases에 올라온 가장 최근 버전을 바로
-              내려받습니다.
+            <h2 id="install-title">설치하기</h2>
+            <p class="lp-windows-only">
+              최신 alpha 버전의 정보입니다. 내려받기는 상단의 다운로드 버튼에서
+              합니다.
             </p>
           </header>
 
-          <div class="lp-install-grid">
+          <p class="lp-platform-notice" data-platform-notice hidden></p>
+
+          <div class="lp-install-grid lp-windows-only">
             <div class="lp-download" data-download-root data-state="idle">
-              <p class="lp-download-label">최신 버전</p>
+              <p class="lp-download-label">Windows 최신 버전</p>
               <p class="lp-download-status" data-download-status role="status">
                 최신 버전은 GitHub Releases에서 확인하세요.
               </p>
@@ -164,17 +290,6 @@
                 </div>
               </dl>
 
-              <a
-                class="lp-button lp-button-primary lp-button-wide"
-                data-download-link
-                href="https://github.com/Haneol/CheekPouch-Site/releases"
-              >
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M12 4.75v10.5M7.5 11 12 15.5l4.5-4.5M5 19.25h14" />
-                </svg>
-                Windows용 다운로드
-              </a>
-
               <details class="lp-verify" data-download-extra hidden>
                 <summary>SHA-256 / 서명 안내</summary>
                 <p data-download-signature hidden></p>
@@ -182,14 +297,6 @@
                   SHA-256 <code data-download-hash></code>
                 </p>
               </details>
-
-              <p class="lp-download-alt">
-                <a
-                  href="https://github.com/Haneol/CheekPouch-Site/releases"
-                  rel="noopener"
-                  >모든 릴리스 보기</a
-                >
-              </p>
             </div>
 
             <div class="lp-install-guide">
@@ -200,7 +307,7 @@
               <ol class="steps lp-steps">
                 <li>
                   <strong>다운로드</strong>
-                  <p>다운로드 버튼으로 설치 파일을 내려받습니다.</p>
+                  <p>상단의 다운로드 버튼으로 설치 파일을 받습니다.</p>
                 </li>
                 <li>
                   <strong>설치 마법사 실행</strong>
@@ -218,20 +325,19 @@
               <div class="lp-note" role="note">
                 <strong>Windows 경고가 나타날 수 있어요</strong>
                 <p>
-                  alpha 설치 파일은 Windows에서 “알 수 없는 게시자” 또는 “Windows의
-                  PC 보호” 경고를 보여줄 수 있습니다. 파일을 이 페이지의 GitHub
-                  Releases에서 받았는지 확인한 뒤, 경고 창의 <b>추가 정보</b>를
-                  눌러 <b>실행</b>을 선택하세요. 출처가 확실하지 않은 파일은
-                  실행하지 마세요.
+                  alpha 설치 파일은 Windows에서 “알 수 없는 게시자” 또는
+                  “Windows의 PC 보호” 경고를 보여줄 수 있습니다. 파일을 이
+                  페이지의 GitHub Releases에서 받았는지 확인한 뒤, 경고 창의
+                  <b>추가 정보</b>를 눌러 <b>실행</b>을 선택하세요. 출처가
+                  확실하지 않은 파일은 실행하지 마세요.
                 </p>
               </div>
-
-              <p class="lp-android">
-                Android 앱은 승인된 기기 대상 제한 배포 중이며 이 페이지에서는
-                내려받을 수 없습니다.
-              </p>
             </div>
           </div>
+
+          <p class="lp-android" data-android-note>
+            Android 앱은 Google Play 출시를 준비 중입니다.
+          </p>
         </div>
       </section>
     </main>
