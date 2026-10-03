@@ -1,0 +1,88 @@
+# Public site: validate, then deploy to Vercel.
+#
+# Vercel's Root Directory stays empty (vercel.json at the repo root points at dist/).
+# Without VERCEL_TOKEN, VERCEL_ORG_ID and VERCEL_PROJECT_ID the workflow only validates.
+name: website
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  VERCEL_CLI: vercel@62.1.0
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.0
+      - name: Static site checks
+        run: node scripts/validate-site.mjs
+
+  deploy:
+    needs: validate
+    # Fork pull requests never get the token.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vercel secrets present?
+        id: vercel
+        run: |
+          if [ -z "$VERCEL_TOKEN" ] || [ -z "$VERCEL_ORG_ID" ] || [ -z "$VERCEL_PROJECT_ID" ]; then
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID 중 설정되지 않은 것이 있어 배포를 건너뜁니다."
+          else
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.vercel.outputs.enabled == 'true'
+        with:
+          node-version: 22.13.0
+
+      - name: Choose production or preview
+        if: steps.vercel.outputs.enabled == 'true'
+        id: target
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ] && [ "$GITHUB_REF" = "refs/heads/main" ]; then
+            echo "environment=production" >> "$GITHUB_OUTPUT"
+            echo "flag=--prod" >> "$GITHUB_OUTPUT"
+          else
+            echo "environment=preview" >> "$GITHUB_OUTPUT"
+            echo "flag=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pull Vercel settings
+        if: steps.vercel.outputs.enabled == 'true'
+        run: npx --yes "$VERCEL_CLI" pull --yes --environment=${{ steps.target.outputs.environment }}
+
+      - name: Build
+        if: steps.vercel.outputs.enabled == 'true'
+        run: npx --yes "$VERCEL_CLI" build ${{ steps.target.outputs.flag }}
+
+      - name: Deploy
+        if: steps.vercel.outputs.enabled == 'true'
+        id: deploy
+        run: |
+          url=$(npx --yes "$VERCEL_CLI" deploy --prebuilt ${{ steps.target.outputs.flag }})
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          echo "### 배포 (${{ steps.target.outputs.environment }})" >> "$GITHUB_STEP_SUMMARY"
+          echo "$url" >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CheekPouch 개인정보처리방침" />
+    <meta name="theme-color" content="#f7f6f3" />
+    <title>개인정보처리방침 · CheekPouch</title>
+    <link rel="icon" href="../assets/cheekpouch-docs-mascot.png" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body class="site-shell">
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <aside class="site-sidebar">
+      <a class="wordmark" href="../" aria-label="CheekPouch 홈">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="../assets/cheekpouch-docs-mascot.png" alt="" />
+        </span>
+        <span class="brand-name" aria-hidden="true">
+          <span class="brand-name-cheek">Cheek</span
+          ><span class="brand-name-pouch">Pouch</span>
+        </span>
+      </a>
+      <nav class="primary-nav" aria-label="주요 메뉴">
+        <p class="nav-section-label">사이트</p>
+        <a href="../">홈</a>
+        <a href="../docs/">Docs</a>
+        <a href="../history/">버전 히스토리</a>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-release" aria-label="현재 배포 상태">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span
+          ><strong>alpha-0.1.0</strong><small>Windows 제한 배포</small></span
+        >
+      </div>
+    </aside>
+
+    <div class="site-workspace">
+      <main class="docs-article" id="main">
+        <header class="page-intro">
+          <p class="eyebrow">PRIVACY</p>
+          <h1>개인정보처리방침</h1>
+          <p>
+            CheekPouch가 계정과 원장 데이터를 어떻게 다루는지 설명합니다.
+            시행일: 2026년 9월 23일.
+          </p>
+        </header>
+
+        <section>
+          <span class="section-number">01</span>
+          <div>
+            <h2>로컬 원장과 선택 기능</h2>
+            <p>
+              원장 원본은 사용자가 선택한 기기의 beancount 폴더에 저장됩니다.
+              기본 기록과 조회에는 Google 로그인이 필요하지 않습니다. Android
+              알림의 거래 후보도 사용자가 온라인 분석을 요청하기 전에는 기기에서
+              처리합니다.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <span class="section-number">02</span>
+          <div>
+            <h2>Google 로그인과 Drive</h2>
+            <p>
+              사용자가 계정을 연결하면 Google 계정 식별자와 확인된 이메일을 연결
+              자격과 사용량 한도 확인에 사용합니다. 앱은 <code>openid</code>,
+              이메일, Google Drive의 앱 전용 데이터
+              공간(<code>drive.appdata</code>) 권한을 요청합니다. 이 권한으로
+              CheekPouch가 만든 암호화된 원장 백업을 그 계정의 앱 전용 공간에
+              저장하고 다시 가져옵니다. 다른 Drive 파일을 읽기 위한 권한은
+              요청하지 않습니다.
+            </p>
+            <p>
+              Google 인증 코드와 토큰은 연결·갱신 과정에서 Google과 CheekPouch
+              인증 프록시를 통과합니다. 프록시는 원문 이메일이나 Google 토큰을
+              지속 저장하지 않고, 계정·기기·갱신 토큰을 확인하기 위한 키 기반
+              해시와 요청 사용량 기록을 보관합니다. 기기의 Drive 갱신 토큰과
+              원장 암호화 키는 OS 보호 저장소에 저장합니다. 원장 본문은 인증
+              프록시에 보내지 않습니다.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <span class="section-number">03</span>
+          <div>
+            <h2>온라인 분석을 사용할 때</h2>
+            <p>
+              사용자가 온라인 검색이나 추천을 켜고 직접 요청하면 입력 문구와
+              필요한 후보 계정·분류 정보가 CheekPouch 프록시를 거쳐 TypeSafe
+              AI로 전송될 수 있습니다. Google Drive에서 가져온 원장 전체를
+              자동으로 AI 서비스에 전달하지 않습니다. 온라인 분석을 사용하지
+              않아도 로컬 기록과 조회를 이용할 수 있습니다.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <span class="section-number">04</span>
+          <div>
+            <h2>보관, 연결 해제, 삭제</h2>
+            <p>
+              계정 연결을 해제하면 그 기기에 저장된 연결 토큰을 지웁니다. 이미
+              Google Drive 앱 전용 공간에 저장된 암호화 백업과 서버의 계정
+              연결·사용량 기록은 연결 해제만으로 자동 삭제되지 않습니다. Google
+              계정에서 앱 접근을 철회하거나 데이터 삭제를 문의할 수 있습니다.
+              데이터 확인·삭제 문의는 Google 동의 화면의 사용자 지원 이메일로
+              보내주세요.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <span class="section-number">05</span>
+          <div>
+            <h2>서비스 제공자와 변경</h2>
+            <p>
+              Google은 로그인과 Drive 보관소를, Cloudflare는 인증·온라인 분석
+              프록시를, TypeSafe AI는 사용자가 요청한 온라인 분석을 제공합니다.
+              각 제공자의 데이터 처리는 해당 서비스의 정책도 적용됩니다.
+              기능이나 처리 방식이 바뀌면 이 문서를 갱신하고 시행일을
+              표시합니다.
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <span>CheekPouch</span>
+        <nav aria-label="서비스 안내">
+          <a aria-current="page" href="./">개인정보처리방침</a>
+          <a href="../terms/">서비스 약관</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

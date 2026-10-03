@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CheekPouch 설치, 원장, 업데이트 사용자 문서"
+    />
+    <meta name="theme-color" content="#f7f6f3" />
+    <title>Docs · CheekPouch</title>
+    <link rel="icon" href="../assets/cheekpouch-docs-mascot.png" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body class="site-shell">
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <aside class="site-sidebar">
+      <a class="wordmark" href="../" aria-label="CheekPouch 홈">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="../assets/cheekpouch-docs-mascot.png" alt="" />
+        </span>
+        <span class="brand-name" aria-hidden="true">
+          <span class="brand-name-cheek">Cheek</span
+          ><span class="brand-name-pouch">Pouch</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="주요 메뉴">
+        <p class="nav-section-label">사이트</p>
+        <a href="../">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4.75 11.25 12 5l7.25 6.25" />
+            <path d="M6.75 10v8.25h10.5V10M10 18.25v-4.5h4v4.5" />
+          </svg>
+          <span>홈</span>
+        </a>
+        <a aria-current="page" href="../docs/">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path
+              d="M5 4.75h10.25A2.75 2.75 0 0 1 18 7.5v11.75H7.75A2.75 2.75 0 0 1 5 16.5V4.75Z"
+            />
+            <path d="M8 8h7M8 11.5h7M8 15h4.5" />
+          </svg>
+          <span>Docs</span>
+        </a>
+        <a href="../history/">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4.75 12a7.25 7.25 0 1 0 2.1-5.12L4.75 9" />
+            <path d="M4.75 5.25V9h3.75M12 8v4.5l3 1.75" />
+          </svg>
+          <span>버전 히스토리</span>
+        </a>
+      </nav>
+
+      <div class="docs-toc" aria-label="문서 목차">
+        <p class="nav-section-label">이 문서</p>
+        <nav>
+          <a href="#install">설치와 첫 실행</a>
+          <a href="#ledger">원장 시작하기</a>
+          <a href="#update">업데이트</a>
+          <a href="#data">데이터와 보안</a>
+          <a href="#troubleshooting">문제 해결</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-release" aria-label="현재 배포 상태">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span
+          ><strong>alpha-0.1.0</strong><small>Windows 제한 배포</small></span
+        >
+      </div>
+    </aside>
+
+    <div class="site-workspace">
+      <main class="docs-article" id="main">
+        <header class="page-intro">
+          <p class="eyebrow">START HERE</p>
+          <h1>CheekPouch 사용 안내</h1>
+          <p>
+            CheekPouch는 beancount 파일을 원본으로 쓰는 로컬 우선 개인 금융
+            도구입니다. 서버 계정 없이 내 컴퓨터의 원장을 직접 다룹니다.
+          </p>
+        </header>
+
+        <section id="install">
+          <span class="section-number">01</span>
+          <div>
+            <h2>설치와 첫 실행</h2>
+            <ol class="steps">
+              <li>
+                <strong>Windows 설치본을 내려받아 실행합니다.</strong>
+                <p>
+                  최신 설치 파일은
+                  <a href="../#install">홈의 설치 안내</a>에서 받을 수 있습니다.
+                </p>
+              </li>
+              <li>
+                <strong>원장 폴더를 고릅니다.</strong>
+                <p>
+                  기존 <code>.beancount</code> 폴더를 열거나 빈 폴더에 기본 계정
+                  체계를 만들 수 있습니다.
+                </p>
+              </li>
+              <li>
+                <strong>원장 문서에서 기록을 시작합니다.</strong>
+                <p>하단 입력행에 내용, 카테고리, 결제수단, 금액을 넣습니다.</p>
+              </li>
+            </ol>
+            <div class="callout">
+              <strong>alpha 버전</strong>
+              <p>
+                기능과 파일 형식이 바뀔 수 있습니다. 중요한 원장은 별도 백업을
+                유지하세요.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="ledger">
+          <span class="section-number">02</span>
+          <div>
+            <h2>원장 시작하기</h2>
+            <p>
+              원장 파일은 표준 beancount 텍스트입니다. 앱에서 기록한 거래는 다른
+              beancount 도구에서도 읽을 수 있고, CheekPouch를 닫아도 파일은
+              선택한 폴더에 그대로 남습니다.
+            </p>
+            <dl class="definition-list">
+              <div>
+                <dt>원장</dt>
+                <dd>
+                  월별 거래를 보고 빠르게 추가하거나 기존 거래를 수정합니다.
+                </dd>
+              </div>
+              <div>
+                <dt>자산</dt>
+                <dd>
+                  자산과 부채 계정을 계층으로 보고 계좌·카드를 추가합니다.
+                </dd>
+              </div>
+              <div>
+                <dt>질의와 보드</dt>
+                <dd>
+                  기간과 조건으로 원장을 묶어 보고, 자주 보는 결과를 고정합니다.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section id="update">
+          <span class="section-number">03</span>
+          <div>
+            <h2>업데이트</h2>
+            <p>
+              Windows 설치본은 private GitHub Release에서 새 버전을 확인합니다.
+              설정의 <strong>업데이트</strong>에서 전달받은 read-only token을 한
+              번 저장하세요.
+            </p>
+            <ol class="steps compact">
+              <li><strong>업데이트 확인</strong>으로 새 버전을 조회합니다.</li>
+              <li><strong>다운로드</strong>를 눌러 설치 파일을 준비합니다.</li>
+              <li>
+                <strong>지금 설치</strong>를 누르면 앱을 종료하고 갱신합니다.
+              </li>
+            </ol>
+            <p>
+              새 버전이 있으면 왼쪽 하단에 <strong>업데이트 있음</strong>이
+              나타납니다. 확인만으로 다운로드하거나 설치하지는 않습니다.
+            </p>
+          </div>
+        </section>
+
+        <section id="data">
+          <span class="section-number">04</span>
+          <div>
+            <h2>데이터와 보안</h2>
+            <ul class="plain-list">
+              <li>원장 원본은 선택한 로컬 폴더의 평문 beancount 파일입니다.</li>
+              <li>백업과 동기화 경계를 나갈 때만 암호화합니다.</li>
+              <li>
+                계정 연결을 지원하는 버전에서는 앱 전용 Google Drive 공간에
+                암호화된 원장 백업을 보관할 수 있습니다. 연결은 선택 사항입니다.
+              </li>
+              <li>
+                업데이트 token은 OS 보호 저장소에 보관하며 화면에 다시 표시하지
+                않습니다.
+              </li>
+              <li>
+                token은 대상 private repository 하나의 Contents 읽기 권한만
+                사용합니다.
+              </li>
+            </ul>
+            <p>
+              계정 연결과 온라인 분석의 데이터 처리 방식은
+              <a href="../privacy/">개인정보처리방침</a>에서 확인할 수 있습니다.
+            </p>
+          </div>
+        </section>
+
+        <section id="troubleshooting">
+          <span class="section-number">05</span>
+          <div>
+            <h2>문제 해결</h2>
+            <div class="qa-list">
+              <details>
+                <summary>업데이트를 확인하지 못합니다.</summary>
+                <p>
+                  네트워크 연결과 token의 만료 여부, repository Contents 읽기
+                  권한을 확인한 뒤 같은 자리에서 다시 시도하세요.
+                </p>
+              </details>
+              <details>
+                <summary>원장 일부가 보이지 않습니다.</summary>
+                <p>
+                  설정의 진단에서 읽은 파일과 파싱 오류를 확인하세요. 원본
+                  파일은 자동으로 삭제하거나 덮어쓰지 않습니다.
+                </p>
+              </details>
+              <details>
+                <summary>macOS나 Linux에서도 업데이트할 수 있나요?</summary>
+                <p>
+                  현재 자동 업데이트 설치는 Windows x64 설치본만 지원합니다.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section id="android">
+          <span class="section-number">06</span>
+          <div>
+            <h2>Android 0.1.2 · 기록과 Jev</h2>
+            <p>
+              기존 앱을 삭제하지 말고 서명된 새 APK로 업데이트하세요. 검토 대기
+              항목과 설정을 유지합니다.
+            </p>
+            <p>
+              검토 항목의 편집, 직접 입력, 빠른 입력, 텍스트 공유에서 같은
+              편집기를 사용합니다. 실제 거래인지 확인하고 분류와 결제 계정을
+              고른 뒤 미확정 또는 확정으로 저장하세요. 작성 중 보관은 원장에
+              넣지 않고 앱에서 이어 쓰기 위한 기능입니다.
+            </p>
+            <p>
+              설정의 계정 연결에서 기본 지출 계정과 결제수단의 원장 계정을
+              선택할 수 있습니다. 알림 자체가 없는 거래는 직접 입력하거나 내역
+              텍스트·이미지를 공유하세요. 여러 내역을 한꺼번에 가져와 대조하는
+              기능은 아직 제공하지 않습니다.
+            </p>
+            <p>
+              Jev는 승인된 기기만 선택적으로 연결합니다. 검토 화면에서 전송할
+              의미 표현과 금융사·수단 종류를 확인하고 분석을 누르세요. 금액,
+              날짜, 사람·가맹점 이름, 카드·계좌 번호와 원장은 보내지 않습니다.
+              제안은 틀릴 수 있으며 확인 후 적용해야 합니다. 예정·혜택·광고·실패
+              단서와 충돌하는 거래 제안은 차단합니다.
+            </p>
+            <p>
+              구버전 검토 항목은 분석에 필요한 문맥이 없을 수 있습니다. 직접
+              편집은 연결 없이도 가능합니다. 월 파일은 같은 원장에 포함됩니다.
+              실제 두 기기의 Drive 왕복 확인은 별도로 진행해야 합니다.
+            </p>
+          </div>
+        </section>
+
+        <nav class="next-page" aria-label="다음 문서">
+          <span>다음</span>
+          <a href="../history/"
+            >버전 히스토리 보기 <span aria-hidden="true">→</span></a
+          >
+        </nav>
+      </main>
+      <footer class="site-footer">
+        <span>CheekPouch Docs</span>
+        <nav aria-label="서비스 안내">
+          <a href="../privacy/">개인정보처리방침</a>
+          <a href="../terms/">서비스 약관</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CheekPouch 버전별 기능 히스토리" />
+    <meta name="theme-color" content="#f7f6f3" />
+    <title>버전 히스토리 · CheekPouch</title>
+    <link rel="icon" href="../assets/cheekpouch-docs-mascot.png" />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/history.js" defer></script>
+  </head>
+  <body class="site-shell">
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <aside class="site-sidebar">
+      <a class="wordmark" href="../" aria-label="CheekPouch 홈">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="../assets/cheekpouch-docs-mascot.png" alt="" />
+        </span>
+        <span class="brand-name" aria-hidden="true">
+          <span class="brand-name-cheek">Cheek</span
+          ><span class="brand-name-pouch">Pouch</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="주요 메뉴">
+        <p class="nav-section-label">사이트</p>
+        <a href="../">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4.75 11.25 12 5l7.25 6.25" />
+            <path d="M6.75 10v8.25h10.5V10M10 18.25v-4.5h4v4.5" />
+          </svg>
+          <span>홈</span>
+        </a>
+        <a href="../docs/">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path
+              d="M5 4.75h10.25A2.75 2.75 0 0 1 18 7.5v11.75H7.75A2.75 2.75 0 0 1 5 16.5V4.75Z"
+            />
+            <path d="M8 8h7M8 11.5h7M8 15h4.5" />
+          </svg>
+          <span>Docs</span>
+        </a>
+        <a aria-current="page" href="../history/">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4.75 12a7.25 7.25 0 1 0 2.1-5.12L4.75 9" />
+            <path d="M4.75 5.25V9h3.75M12 8v4.5l3 1.75" />
+          </svg>
+          <span>버전 히스토리</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-release" aria-label="현재 배포 상태">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span
+          ><strong>alpha-0.1.0</strong><small>Windows 제한 배포</small></span
+        >
+      </div>
+    </aside>
+
+    <div class="site-workspace">
+      <main class="history-page" id="main">
+        <header class="page-intro history-intro">
+          <p class="eyebrow">RELEASE NOTES</p>
+          <h1>버전 히스토리</h1>
+          <p>
+            태그가 올라갈 때마다 실제 배포된 기능과 수정 사항을 최신순으로
+            기록합니다. 현재 채널은 alpha입니다.
+          </p>
+        </header>
+
+        <article class="release-entry">
+          <div class="release-rail" aria-hidden="true"><span></span></div>
+          <div class="release-content">
+            <header>
+              <div>
+                <p class="release-date">2026-09-21</p>
+                <h2>Android 0.1.2 · 개발 중</h2>
+              </div>
+              <span class="channel-badge">제한 배포</span>
+            </header>
+            <p class="release-summary">
+              모바일 기록 검토와 승인 기기의 Jev 연결을 보강했습니다.
+            </p>
+            <ul>
+              <li>직접 입력·공유·검토의 미확정/확정 저장과 작성 중 보관</li>
+              <li>
+                결제수단 계정 재연결, 기본 지출 계정 선택, 원장 계정 누락 사유
+                구분
+              </li>
+              <li>예정·혜택·광고·실패 안내 차단과 선택형 Jev 제안</li>
+              <li>기존 검토 대기 항목을 유지하는 데이터베이스 갱신</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="release-list" data-release-list aria-live="polite">
+          <article class="release-entry">
+            <div class="release-rail" aria-hidden="true"><span></span></div>
+            <div class="release-content">
+              <header>
+                <div>
+                  <p class="release-date">2026-09-18</p>
+                  <h2>alpha-0.1.0</h2>
+                </div>
+                <span class="channel-badge">ALPHA</span>
+              </header>
+              <p class="release-summary">
+                로컬 원장 작업과 private GitHub 자동 업데이트를 한 흐름으로 묶은
+                첫 alpha 버전입니다.
+              </p>
+              <div class="release-columns">
+                <section>
+                  <h3>새 기능</h3>
+                  <ul>
+                    <li>beancount 원장을 다루는 데스크톱 워크스페이스</li>
+                    <li>원장·자산·보드·질의 문서와 탭·분할</li>
+                    <li>private GitHub 자동 업데이트와 하단 알림</li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>수정</h3>
+                  <ul>
+                    <li>업데이트 실패를 앱과 원장 작업에서 분리</li>
+                    <li>저장 token의 renderer·로그 노출 방지</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <noscript>
+          <p class="script-note">
+            JavaScript가 꺼져 있어 내장된 최신 기록만 표시하고 있습니다.
+          </p>
+        </noscript>
+      </main>
+
+      <footer class="site-footer">
+        <span>CheekPouch</span>
+        <nav aria-label="서비스 안내">
+          <a href="../privacy/">개인정보처리방침</a>
+          <a href="../terms/">서비스 약관</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
