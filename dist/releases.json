@@ -1,12 +1,25 @@
 {
   "mobileReleases": [
     {
+      "version": "0.1.6",
+      "versionCode": 9,
+      "status": "development",
+      "date": "2026-10-13",
+      "platform": "android",
+      "summary": "Google Play 비공개 테스트 업데이트와 새 스토어 아이콘 제출 완료 후 Google 자동검사 중. 검사가 성공하면 Google 심사로 전송되며, 승인 후 기존 Alpha 테스터에게 제공됩니다. 아직 테스터에게 제공되지 않으며, 현재 설치본은 0.1.4(code 7)입니다.",
+      "features": [],
+      "fixes": [
+        "앱과 Google Play 스토어 등록 아이콘을 같은 햄스터 풀샷으로 통일",
+        "주황색 배경을 제거하고 투명 배경의 전신 캐릭터 적용"
+      ]
+    },
+    {
       "version": "0.1.5",
       "versionCode": 8,
       "status": "development",
       "date": "2026-10-13",
       "platform": "android",
-      "summary": "Google Play 비공개 테스트 업데이트 제출 완료 후 Google 자동검사 중. 검사가 성공하면 Google 심사로 전송되며, 승인 후 기존 Alpha 테스터에게 제공됩니다. 현재 테스터 설치본은 0.1.4(code 7)입니다.",
+      "summary": "사진 인식과 16 KB 호환성 개선은 0.1.6(code 9)에 포함됐으며, 심사 요청도 code 9로 대체됐습니다. 0.1.5의 별도 게시 완료는 확인되지 않았습니다.",
       "features": [],
       "fixes": [
         "16 KB 페이지 크기 환경에 맞춘 문자 인식 라이브러리 개선",
