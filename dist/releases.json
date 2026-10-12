@@ -6,7 +6,7 @@
       "status": "development",
       "date": "2026-10-12",
       "platform": "android",
-      "summary": "Google Play 비공개 테스트 업데이트 변경사항 저장 완료. 빠른 자동 검사 중이며 완료 후 심사에 전송됩니다. 현재 테스터 설치본은 0.1.3(code 6)입니다.",
+      "summary": "Google Play 비공개 테스트 업데이트 Google 심사 중. 승인 후 기존 Alpha 테스터에게 제공되며, 현재 테스터 설치본은 0.1.3(code 6)입니다.",
       "features": [
         "사진 선택·영수증 촬영과 기기 안 문자 인식으로 입력 채우기",
         "CSV·TSV 파일 가져오기와 미리보기·중복 확인",
