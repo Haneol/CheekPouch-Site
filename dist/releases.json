@@ -1,12 +1,31 @@
 {
   "mobileReleases": [
     {
+      "version": "0.1.7",
+      "versionCode": 10,
+      "status": "development",
+      "date": "2026-10-14",
+      "platform": "android",
+      "summary": "최신 main의 모바일 개선을 Google Play 비공개 테스트 업데이트로 준비 중입니다. 아직 심사 제출이나 테스터 게시가 완료되지 않았습니다. 현재 테스터 설치본은 0.1.6(code 9)입니다.",
+      "features": [
+        "설치된 앱에서 자동 기록 대상을 고르고 앱별 알림에 맞아요·아니에요로 학습",
+        "Play 설치본의 앱 안 업데이트 안내와 백그라운드 다운로드",
+        "분류·결제수단 검색, 초성 검색과 추천 계정 선택"
+      ],
+      "fixes": [
+        "알림·음성의 금액, 날짜, 거래처와 결제수단 자동 인식 개선",
+        "작성 중 모달 보호와 내역 목록·월 이동·금액 입력 개선",
+        "동기화 오류와 가져오기 안내, 되돌릴 수 없는 동작 확인 개선",
+        "알림 학습의 기기 안 암호화 보관과 삭제 안내 갱신"
+      ]
+    },
+    {
       "version": "0.1.6",
       "versionCode": 9,
       "status": "development",
       "date": "2026-10-13",
       "platform": "android",
-      "summary": "Google Play 비공개 테스트 업데이트와 새 스토어 아이콘 제출 완료 후 Google 자동검사 중. 검사가 성공하면 Google 심사로 전송되며, 승인 후 기존 Alpha 테스터에게 제공됩니다. 아직 테스터에게 제공되지 않으며, 현재 설치본은 0.1.4(code 7)입니다.",
+      "summary": "2026년 10월 13일 01:30(KST) Google Play 비공개 테스트 게시 완료. 현재 Alpha 테스터에게 제공되는 버전입니다.",
       "features": [],
       "fixes": [
         "앱과 Google Play 스토어 등록 아이콘을 같은 햄스터 풀샷으로 통일",
@@ -34,7 +53,7 @@
       "status": "development",
       "date": "2026-10-12",
       "platform": "android",
-      "summary": "2026년 10월 12일 20:52(KST) Google Play 비공개 테스트 게시 완료. 현재 테스터에게 제공되는 버전입니다.",
+      "summary": "2026년 10월 12일 20:52(KST) Google Play 비공개 테스트 게시 완료. 현재 Alpha 설치본은 0.1.6(code 9)입니다.",
       "features": [
         "사진 선택·영수증 촬영과 기기 안 문자 인식으로 입력 채우기",
         "CSV·TSV 파일 가져오기와 미리보기·중복 확인",
