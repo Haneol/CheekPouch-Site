@@ -1,12 +1,24 @@
 {
   "mobileReleases": [
     {
+      "version": "0.1.8",
+      "versionCode": 11,
+      "status": "development",
+      "date": "2026-10-14",
+      "platform": "android",
+      "summary": "0.1.7(code 10)의 시작 시 종료 문제를 수정했습니다. 빌드와 앱 시작·재생성 검사를 통과했으며 Play 제출 준비 중입니다. 제출·게시 완료는 아직 확인되지 않았습니다. 현재 Alpha 테스터에게 제공되는 버전은 0.1.7(code 10)입니다.",
+      "features": [],
+      "fixes": [
+        "앱을 열 때 즉시 종료되는 문제 수정"
+      ]
+    },
+    {
       "version": "0.1.7",
       "versionCode": 10,
       "status": "development",
       "date": "2026-10-14",
       "platform": "android",
-      "summary": "Google Play 비공개 테스트 업데이트 제출 완료. 현재 Google의 빠른 자동 검사 중이며, 검사가 성공하면 심사로 전송되고 승인 후 기존 Alpha 테스터에게 제공됩니다. 아직 0.1.7(code 10)의 실제 심사 시작이나 테스터 게시가 확인되지 않았습니다. 현재 테스터 설치본은 0.1.6(code 9)입니다.",
+      "summary": "2026년 10월 14일 13:59(KST) Google Play 비공개 테스트 게시 완료. Alpha 테스터에게 제공 중이나 시작 시 종료 문제가 확인되어 0.1.8(code 11) 수정을 준비 중입니다.",
       "features": [
         "설치된 앱에서 자동 기록 대상을 고르고 앱별 알림에 맞아요·아니에요로 학습",
         "Play 설치본의 앱 안 업데이트 안내와 백그라운드 다운로드",
@@ -25,7 +37,7 @@
       "status": "development",
       "date": "2026-10-13",
       "platform": "android",
-      "summary": "2026년 10월 13일 01:30(KST) Google Play 비공개 테스트 게시 완료. 현재 Alpha 테스터에게 제공되는 버전입니다.",
+      "summary": "2026년 10월 13일 01:30(KST) Google Play 비공개 테스트 게시 완료. 이후 0.1.7(code 10)로 교체됐습니다.",
       "features": [],
       "fixes": [
         "앱과 Google Play 스토어 등록 아이콘을 같은 햄스터 풀샷으로 통일",
@@ -53,7 +65,7 @@
       "status": "development",
       "date": "2026-10-12",
       "platform": "android",
-      "summary": "2026년 10월 12일 20:52(KST) Google Play 비공개 테스트 게시 완료. 현재 Alpha 설치본은 0.1.6(code 9)입니다.",
+      "summary": "2026년 10월 12일 20:52(KST) Google Play 비공개 테스트 게시 완료. 이후 더 높은 버전으로 교체됐습니다.",
       "features": [
         "사진 선택·영수증 촬영과 기기 안 문자 인식으로 입력 채우기",
         "CSV·TSV 파일 가져오기와 미리보기·중복 확인",
