@@ -6,14 +6,13 @@
       "status": "development",
       "date": "2026-10-20",
       "platform": "android",
-      "summary": "동기화를 새 동기화 서버로 옮기는 업데이트입니다. 서명된 설치 묶음(code 12)을 만들었고 Google Play 업로드 전입니다. 현재 Alpha 설치본과 심사 상태는 0.1.8(code 11) 기록을 따릅니다.",
+      "summary": "최신 main의 암호화 중계 서버 동기화를 포함한 Alpha 업데이트를 준비 중입니다. 실제 기기 간 이전은 아직 확인하지 않았습니다.",
       "features": [
-        "Google Drive 대신 CheekPouch 동기화 서버로 원장을 동기화(내용은 계속 기기에서 암호화)",
-        "처음 연결한 뒤에는 Google 로그인이 만료돼도 동기화 유지",
-        "Drive에서 옮길 때 두 기기의 수정 내용을 함께 보존"
+        "동기화 중계 서버와 revision 기반 충돌 처리",
+        "Drive 사본을 보존하는 이전과 기기 토큰 연결"
       ],
       "fixes": [
-        "앱을 열 때 즉시 종료되던 문제 수정(0.1.8 수정 포함)"
+        "Activity Context 연결 후 Play 업데이트 초기화 유지"
       ]
     },
     {
@@ -22,7 +21,7 @@
       "status": "development",
       "date": "2026-10-14",
       "platform": "android",
-      "summary": "0.1.7(code 10)의 시작 시 종료 문제를 수정했습니다. 빌드와 앱 시작·재생성 검사를 통과하고 Google Play에 제출했습니다. 현재 빠른 자동 검사 중이며 승인 대기 상태입니다. 실제 심사 시작과 0.1.8(code 11)의 테스터 제공은 아직 확인되지 않았습니다. 현재 Alpha 설치본은 0.1.7(code 10)입니다.",
+      "summary": "2026년 10월 14일 Google Play Alpha 게시 완료. 앱 시작 시 종료 문제를 수정한 0.1.8(code 11)이 테스터에게 제공 중입니다.",
       "features": [],
       "fixes": [
         "앱을 열 때 즉시 종료되는 문제 수정"
