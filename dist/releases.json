@@ -6,7 +6,7 @@
       "status": "development",
       "date": "2026-10-20",
       "platform": "android",
-      "summary": "최신 main의 암호화 중계 서버 동기화를 포함한 Alpha 업데이트를 준비 중입니다. 실제 기기 간 이전은 아직 확인하지 않았습니다.",
+      "summary": "0.1.9(code 12)의 서명 빌드와 모바일 core 324건·앱 178건 검사를 통과하고 Google Play Alpha에 제출했습니다. 현재 빠른 자동 검사 중이며 Google 승인과 테스터 제공은 아직 확인하지 않았습니다. 현재 Alpha 설치본은 0.1.8(code 11)입니다. 실제 기기 간 중계 서버 이전은 별도 확인 전입니다.",
       "features": [
         "동기화 중계 서버와 revision 기반 충돌 처리",
         "Drive 사본을 보존하는 이전과 기기 토큰 연결"
