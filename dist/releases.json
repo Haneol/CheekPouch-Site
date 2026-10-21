@@ -1,12 +1,27 @@
 {
   "mobileReleases": [
     {
+      "version": "0.1.10",
+      "versionCode": 13,
+      "status": "development",
+      "date": "2026-10-22",
+      "platform": "android",
+      "summary": "0.1.10(code 13)의 서명 빌드와 모바일 core330·app178·서버23건, 전체 게이트를 통과하고 기존 Google Play Alpha에 심사 제출했습니다. 현재 Google 빠른 자동 검사 중이며 테스터 제공은 승인 대기입니다. 현재 설치본은 0.1.9(code 12)입니다. 실제 두 기기 간 실시간 수신은 별도 검증 전입니다.",
+      "features": [
+        "앱을 보고 있을 때 다른 기기 변경을 실시간으로 수신",
+        "연결이 끊기면 자동 재연결하고 주기 확인 유지"
+      ],
+      "fixes": [
+        "새 기기가 합류할 때 찾은 병합 기준을 저장해 후속 동기화·충돌 확인에 유지"
+      ]
+    },
+    {
       "version": "0.1.9",
       "versionCode": 12,
       "status": "development",
       "date": "2026-10-20",
       "platform": "android",
-      "summary": "0.1.9(code 12)의 서명 빌드와 모바일 core 324건·앱 178건 검사를 통과하고 Google Play Alpha에 제출했습니다. 현재 빠른 자동 검사 중이며 Google 승인과 테스터 제공은 아직 확인하지 않았습니다. 현재 Alpha 설치본은 0.1.8(code 11)입니다. 실제 기기 간 중계 서버 이전은 별도 확인 전입니다.",
+      "summary": "2026년 10월 21일 00:05(KST) Google Play Alpha 게시 완료. 0.1.9(code 12)이 기존 테스터에게 제공 중입니다. 실제 기기 간 중계 서버 이전은 별도 확인 전입니다.",
       "features": [
         "동기화 중계 서버와 revision 기반 충돌 처리",
         "Drive 사본을 보존하는 이전과 기기 토큰 연결"
