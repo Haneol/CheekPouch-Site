@@ -47,6 +47,8 @@
             설명합니다. Android 0.1.11까지의 기능과 데스크톱의
             로컬 원장·선택형 동기화에 적용되는 처리 방식입니다.
             시행일: 2026년 10월 24일.
+            <a href="#delete-account">CheekPouch 계정 및 서버 데이터 삭제 요청</a>은
+            아래 안내에서 접수할 수 있습니다.
           </p>
         </header>
 
@@ -153,7 +155,7 @@
           </div>
         </section>
 
-        <section>
+        <section id="sync-data">
           <span class="section-number">03</span>
           <div>
             <h2>Google 계정과 선택형 암호화 동기화</h2>
@@ -264,8 +266,39 @@
           </div>
         </section>
 
-        <section id="contact">
+        <section id="delete-account">
           <span class="section-number">06</span>
+          <div>
+            <h2>CheekPouch 계정 및 서버 데이터 삭제 요청</h2>
+            <p>
+              Google 연결로 생성된 CheekPouch 계정과 서버 데이터의 삭제를 요청할 수
+              있습니다. 삭제 요청 대상은 계정 식별자, 등록 기기, 초대·원장 멤버십과
+              본인 소유 원장의 서버 암호문입니다. Google 계정 자체를 삭제하는 요청은 아닙니다.
+            </p>
+            <p>
+              <a href="https://github.com/Haneol/CheekPouch-Site/issues/new?title=CheekPouch%20%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%EC%84%9C%EB%B2%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD&amp;body=CheekPouch%20%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%EC%84%9C%EB%B2%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%EB%A5%BC%20%EC%9A%94%EC%B2%AD%ED%95%A9%EB%8B%88%EB%8B%A4.%20%EB%B3%B8%EC%9D%B8%20%ED%99%95%EC%9D%B8%20%EC%A0%88%EC%B0%A8%EB%A5%BC%20%EC%95%88%EB%82%B4%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.">GitHub에서 계정 및 서버 데이터 삭제 요청하기</a>를
+              열어 삭제 의사를 접수하세요. 이 문의는 공개되므로 이메일, 금융 내역, 원장,
+              알림 원문, 토큰, 비밀번호와 초대 코드를 작성하거나 첨부하지 마세요.
+              공개 이슈에는 삭제 의사만 남기고, 본인 확인에 필요한 사항은 운영자의
+              안내에 따라 별도로 전달하세요.
+            </p>
+            <p>
+              운영자는 요청을 확인한 뒤 계정 본인 확인과 삭제 범위를 안내하고 처리
+              진행을 회신합니다. 다른 사람이 소유한 원장과 다른 멤버가 이미 받은
+              로컬 사본·백업은 이 요청으로 삭제되지 않으며 자동으로 회수할 수 없습니다.
+              기기에 저장된 금융 데이터, 내보낸 파일과 개인 Drive 사본은 별도로
+              관리해야 합니다.
+            </p>
+            <p>
+              일반 동기화 중 교체·삭제된 암호문 기록은 최대 30일, 원장당 64 MiB 한도에서
+              보관합니다. 자세한 서버 보관 범위는
+              <a href="#sync-data">Google 계정과 선택형 암호화 동기화</a> 안내를 확인하세요.
+            </p>
+          </div>
+        </section>
+
+        <section id="contact">
+          <span class="section-number">07</span>
           <div>
             <h2>문의와 변경</h2>
             <p>
@@ -274,7 +307,9 @@
               <a href="https://github.com/Haneol/CheekPouch-Site/issues/new">GitHub 문의 창구</a>로
               접수할 수 있습니다. 공개 게시물이므로 금융 내역, 알림 원문,
               비밀번호나 인증 정보를 작성하지 마세요. 사용자의 기기와 개인
-              Drive에 보관된 데이터는 운영자가 대신 열거나 삭제할 수 없습니다. 중계 서버의 암호문 삭제는 위 문의 창구로 요청할 수 있으며, 공개 문의에 원장이나 인증 정보를 첨부하지 마세요.
+              Drive에 보관된 데이터는 운영자가 대신 열거나 삭제할 수 없습니다.
+              계정과 중계 서버 데이터의 삭제는
+              <a href="#delete-account">계정 및 서버 데이터 삭제 요청</a> 안내를 따라주세요.
             </p>
             <p>
               기능이나 처리 방식이 바뀌면 이 문서를 갱신하고 시행일을 표시합니다.
