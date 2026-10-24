@@ -6,7 +6,7 @@
       "status": "development",
       "date": "2026-10-25",
       "platform": "android",
-      "summary": "Google Play Alpha 0.1.17(code 21) 배포 준비 중. ChatGPT 연결과 알림 정리, 앱 업데이트 상태 안내를 개선했습니다.",
+      "summary": "2026년 10월 25일 00:09(KST) Google Play Alpha 0.1.17(code 21) 심사 제출 접수. Google 자동 검사 중이며 승인·테스터 제공은 대기 중입니다. ChatGPT 연결과 알림 정리, 앱 업데이트 상태 안내를 개선했습니다.",
       "features": [
         "알림 한 건을 한 행으로 표시하고 미확정·확정 탭으로 확인",
         "사용자가 전송에 동의한 기록 전 알림 최대 30건을 Luna로 해석해 미확정 기록 생성",
