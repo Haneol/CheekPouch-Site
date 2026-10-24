@@ -72,6 +72,131 @@
           </p>
         </header>
 
+        <article class="release-entry" id="android-0-1-12">
+          <div class="release-rail" aria-hidden="true"><span></span></div>
+          <div class="release-content">
+            <header>
+              <div>
+                <p class="release-date">2026-10-24</p>
+                <h2>Android 0.1.12 · code 16</h2>
+              </div>
+              <span class="channel-badge">검증·배포 준비</span>
+            </header>
+            <p class="release-summary">알림 원문 확인과 사용자 입력 학습을 개선한 0.1.12(code 16)의 Google Play Alpha 배포를 준비하고 있습니다. 검증 진행 중이며 제출·승인·테스터 제공은 아직 확인하지 않았습니다.</p>
+            <ul>
+              <li>알림 원문과 필수 결제 내용을 분리하고 같은 알림의 이전 사용자 입력을 우선 재사용</li>
+              <li>앱별 결제수단 연결과 수집 우선순위, 약 60초 안에 여러 앱이 알린 같은 금액·종류의 결제 묶기</li>
+              <li>앱 시작 시 하나씩 확인하기, 자동 기록 카드의 좌우 확인과 빠른 정보 채우기</li>
+              <li>확인 화면에서 결제수단을 바로 추가하고 거래가 아닌 알림도 따로 확인</li>
+              <li>알림 문구를 결제 내용에 바로 옮기지 않고 사용자 입력이 있어야 저장하도록 개선</li>
+              <li>다시 채울 자동 기록은 기존 초안을 보존한 뒤 저장 시 같은 거래를 수정</li>
+              <li>내역 선택 도구가 기록 버튼을 가리지 않도록 전환하고 닫기·탭 이동 시 선택 해제</li>
+              <li>앱 종료 시 두 번 뒤로가기와 안내 표시</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="release-entry" id="android-0-1-11">
+          <div class="release-rail" aria-hidden="true"><span></span></div>
+          <div class="release-content">
+            <header>
+              <div>
+                <p class="release-date">2026-10-24</p>
+                <h2>Android 0.1.11 · code 15</h2>
+              </div>
+              <span class="channel-badge">Google Play Alpha 게시 완료</span>
+            </header>
+            <p class="release-summary">2026년 10월 24일 11:33(KST) Google Play Alpha 게시 완료. 공유 원장과 절약·절세를 포함한 0.1.11(code 15)이 선택한 테스터에게 제공 중입니다.</p>
+            <ul>
+              <li>개인·공유 원장 전환, 공유 원장 생성과 대상 Google 계정의 초대 코드 참여·공동 편집</li>
+              <li>2026년 카드·체크카드·현금영수증 소득공제 집계와 거래 분류 확인</li>
+              <li>같은 예정 소비의 결제수단별 카드 혜택·세금 감소 추정 비교</li>
+              <li>공유 원장 사용 중 개인 결제 알림의 자동 반영을 보류하고 검토 대기 자료 보존</li>
+              <li>큰 글꼴·키보드·화면 전환과 작성 중 절약 입력 보존 개선</li>
+              <li>공유 초대와 기기 전용 절약 설정의 개인정보 처리·백업 범위 안내 갱신</li>
+              <li>계정 및 서버 데이터 삭제 요청 안내 추가</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="release-entry" id="android-0-1-10">
+          <div class="release-rail" aria-hidden="true"><span></span></div>
+          <div class="release-content">
+            <header>
+              <div>
+                <p class="release-date">2026-10-22</p>
+                <h2>Android 0.1.10 · code 13</h2>
+              </div>
+              <span class="channel-badge">Google Play Alpha 게시 완료</span>
+            </header>
+            <p class="release-summary">2026년 10월 22일 01:39(KST) Google Play Alpha 게시 완료. 0.1.10(code 13)이 선택한 테스터에게 제공 중입니다. 실제 두 기기 간 실시간 수신은 별도 검증 전입니다.</p>
+            <ul>
+              <li>앱을 보고 있을 때 다른 기기 변경을 실시간으로 수신</li>
+              <li>연결이 끊기면 자동 재연결하고 주기 확인 유지</li>
+              <li>새 기기가 합류할 때 찾은 병합 기준을 저장해 후속 동기화·충돌 확인에 유지</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="release-entry" id="android-0-1-9">
+          <div class="release-rail" aria-hidden="true"><span></span></div>
+          <div class="release-content">
+            <header>
+              <div>
+                <p class="release-date">2026-10-20</p>
+                <h2>Android 0.1.9 · code 12</h2>
+              </div>
+              <span class="channel-badge">Google Play Alpha 게시 완료</span>
+            </header>
+            <p class="release-summary">2026년 10월 21일 00:05(KST) Google Play Alpha 게시 완료. 0.1.9(code 12)이 기존 테스터에게 제공 중입니다. 실제 기기 간 중계 서버 이전은 별도 확인 전입니다.</p>
+            <ul>
+              <li>동기화 중계 서버와 revision 기반 충돌 처리</li>
+              <li>Drive 사본을 보존하는 이전과 기기 토큰 연결</li>
+              <li>Activity Context 연결 후 Play 업데이트 초기화 유지</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="release-entry" id="android-0-1-8">
+          <div class="release-rail" aria-hidden="true"><span></span></div>
+          <div class="release-content">
+            <header>
+              <div>
+                <p class="release-date">2026-10-14</p>
+                <h2>Android 0.1.8 · code 11</h2>
+              </div>
+              <span class="channel-badge">Google Play Alpha 게시 완료</span>
+            </header>
+            <p class="release-summary">2026년 10월 14일 Google Play Alpha 게시 완료. 앱 시작 시 종료 문제를 수정한 0.1.8(code 11)이 테스터에게 제공 중입니다.</p>
+            <ul>
+              <li>앱을 열 때 즉시 종료되는 문제 수정</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="release-entry" id="android-0-1-7">
+          <div class="release-rail" aria-hidden="true"><span></span></div>
+          <div class="release-content">
+            <header>
+              <div>
+                <p class="release-date">2026-10-14</p>
+                <h2>Android 0.1.7 · code 10</h2>
+              </div>
+              <span class="channel-badge">Google Play Alpha 게시 완료</span>
+            </header>
+            <p class="release-summary">2026년 10월 14일 13:59(KST) Google Play 비공개 테스트 게시 완료. Alpha 테스터에게 제공 중이나 시작 시 종료 문제가 확인되어 수정 버전 0.1.8(code 11)을 제출했습니다.</p>
+            <ul>
+              <li>설치된 앱에서 자동 기록 대상을 고르고 앱별 알림에 맞아요·아니에요로 학습</li>
+              <li>Play 설치본의 앱 안 업데이트 안내와 백그라운드 다운로드</li>
+              <li>분류·결제수단 검색, 초성 검색과 추천 계정 선택</li>
+              <li>알림·음성의 금액, 날짜, 거래처와 결제수단 자동 인식 개선</li>
+              <li>작성 중 모달 보호와 내역 목록·월 이동·금액 입력 개선</li>
+              <li>동기화 오류와 가져오기 안내, 되돌릴 수 없는 동작 확인 개선</li>
+              <li>알림 학습의 기기 안 암호화 보관과 삭제 안내 갱신</li>
+            </ul>
+          </div>
+        </article>
+
         <article class="release-entry" id="android-0-1-6">
           <div class="release-rail" aria-hidden="true"><span></span></div>
           <div class="release-content">
@@ -80,14 +205,11 @@
                 <p class="release-date">2026-10-13</p>
                 <h2>Android 0.1.6 · code 9</h2>
               </div>
-              <span class="channel-badge">제출 완료 · 자동검사 중</span>
+              <span class="channel-badge">Google Play Alpha 게시 완료</span>
             </header>
             <p class="release-summary">
-              앱과 Google Play 스토어 아이콘을 기존 햄스터 풀샷으로 맞추는
-              비공개 테스트 업데이트를 제출했으며, Google 자동검사 중입니다.
-              검사가 성공하면 Google 심사로 전송되며, 승인 후 기존 Alpha
-              테스터에게 제공됩니다. 아직 테스터에게 제공되지 않습니다.
-              현재 테스터 설치본은 0.1.4(code 7)입니다.
+              2026년 10월 13일 01:30(KST) Google Play 비공개 테스트 게시를
+              완료했습니다. 이후 0.1.7(code 10)로 교체됐습니다.
             </p>
             <ul>
               <li>앱과 Google Play 스토어 등록 아이콘을 같은 햄스터 풀샷으로 통일</li>
@@ -132,7 +254,7 @@
             </header>
             <p class="release-summary">
               2026년 10월 12일 20:52(KST)에 Google Play 비공개 테스트 게시를
-              완료했습니다. 현재 테스터에게 제공되는 버전입니다.
+              완료했습니다. 이후 더 높은 버전으로 교체됐습니다.
             </p>
             <ul>
               <li>사진 선택·영수증 촬영과 기기 안 문자 인식으로 입력 채우기</li>
