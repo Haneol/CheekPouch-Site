@@ -3,10 +3,10 @@
     {
       "version": "0.1.25",
       "versionCode": 29,
-      "status": "development",
+      "status": "submitted",
       "date": "2026-10-29",
       "platform": "android",
-      "summary": "Google Play 비공개 Alpha 제출을 준비합니다. 홈에서 바로 사용하는 기능 위젯과 자유로운 홈 편집을 추가하고 지출 금액 가림과 자주 쓰는 기능을 개선했습니다.",
+      "summary": "2026년 10월 29일 Google Play 비공개 Alpha 0.1.25(code 29) 심사 접수·검토 중을 확인했습니다. 홈 기능 위젯과 자유로운 홈 편집, 지출 금액 가림·자주 쓰는 기능을 개선했습니다.",
       "features": [
         "실제 조회·입력·조작이 가능한 기능 위젯 15종과 이번 달 지출·자주 쓰는 기능 카드",
         "홈 위젯 추가·제거·순서 변경과 간단히·자세히 보기 설정",
