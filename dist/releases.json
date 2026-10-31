@@ -2,11 +2,11 @@
   "mobileReleases": [
     {
       "version": "0.1.31",
-      "versionCode": 35,
-      "status": "prepared",
+      "versionCode": 36,
+      "status": "submitted",
       "date": "2026-10-31",
       "platform": "android",
-      "summary": "외화 알림과 월별 명세 대조·주거 관리를 추가한 비공개 Alpha 업데이트를 준비하고 있습니다. 아직 Google Play에 제출하지 않았습니다.",
+      "summary": "Google Play 비공개 Alpha 0.1.31(code 36)을 2026년 10월 31일 16:20(KST)에 심사 요청했습니다. 현재 검토 중이며 승인·테스터 배포는 대기 중입니다. 외화 알림, 월별 카드·은행·포인트 명세 대조, 집별 관리비·도시가스 관리와 사진·PDF의 확인 후 AI 읽기를 추가했습니다.",
       "features": [
         "외화 원금 보존, 실제 원화 청구액·입력 환율로 계산, 명세의 청구액과 기존 외화 알림 연결",
         "카드·은행·포인트 명세를 월별로 암호화 보관하고 일대일 대조, 누락 초안 추가·사용자 확인 학습",
