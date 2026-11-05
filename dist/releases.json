@@ -1,12 +1,31 @@
 {
   "mobileReleases": [
     {
-      "version": "0.1.37",
-      "versionCode": 42,
-      "status": "submitted",
+      "version": "0.1.38",
+      "versionCode": 43,
+      "status": "preparing",
       "date": "2026-11-05",
       "platform": "android",
-      "summary": "Google Play 비공개 Alpha 0.1.37(code 42)은 2026년 11월 5일 심사 제출을 접수해 Google 사전 검사 중입니다. 사전 검사와 검토·승인 후 기존 Alpha 테스터에게 제공됩니다. 홈의 회색 금액 가림과 미리보기가 있는 홈 편집, 목적별 서비스 구성을 다듬었습니다. 도우미를 답변이 이어서 나타나는 채팅으로 바꾸고, ChatGPT 로그인과 OpenAI·Anthropic API 연결을 선택해 모델·생각 깊이를 정할 수 있도록 했습니다.",
+      "summary": "Google Play 비공개 Alpha 0.1.38(code 43)을 준비하고 있습니다. 금액 가림, 말로 기록, 도우미 채팅과 알림 관리를 개선했습니다.",
+      "features": [
+        "금액을 눌러 공개하고 길게 눌러 다시 가리기",
+        "OpenAI API 연결에서 선택하는 음성 인식 모델과 말로 기록",
+        "기록 버튼을 길게 눌러 말로 기록 또는 빠른 질문 열기",
+        "도우미 채팅의 정보 메뉴와 응답 표시 개선",
+        "알림 내역에서 AI 정리와 되돌리기, 진행 상황 표시"
+      ],
+      "fixes": [
+        "사용자가 시작한 AI 알림 작업의 백그라운드 진행 및 알림 표시",
+        "AI 사용 상태 표시와 홈 구성 개선"
+      ]
+    },
+    {
+      "version": "0.1.37",
+      "versionCode": 42,
+      "status": "published",
+      "date": "2026-11-05",
+      "platform": "android",
+      "summary": "Google Play 비공개 Alpha 0.1.37(code 42)은 2026년 11월 5일 09:24(KST)에 게시되어 기존 Alpha 테스터에게 제공됩니다. 홈의 회색 금액 가림과 미리보기가 있는 홈 편집, 목적별 서비스 구성을 다듬었습니다. 도우미를 답변이 이어서 나타나는 채팅으로 바꾸고, ChatGPT 로그인과 OpenAI·Anthropic API 연결을 선택해 모델·생각 깊이를 정할 수 있도록 했습니다.",
       "features": [
         "배치를 유지하는 회색 금액 가림과 이번 실행 동안 금액 보기",
         "순서·모양 편집과 홈 미리보기, 같은 화면에서 위젯 추가·삭제 취소·변경 확인",
