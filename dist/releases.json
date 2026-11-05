@@ -2,11 +2,11 @@
   "mobileReleases": [
     {
       "version": "0.1.38",
-      "versionCode": 43,
+      "versionCode": 44,
       "status": "preparing",
       "date": "2026-11-05",
       "platform": "android",
-      "summary": "Google Play 비공개 Alpha 0.1.38(code 43)을 준비하고 있습니다. 금액 가림, 말로 기록, 도우미 채팅과 알림 관리를 개선했습니다.",
+      "summary": "Google Play 비공개 Alpha 0.1.38(code 44)을 준비하고 있습니다. 금액 가림, 말로 기록, 도우미 채팅과 알림 관리를 개선했습니다.",
       "features": [
         "금액을 눌러 공개하고 길게 눌러 다시 가리기",
         "OpenAI API 연결에서 선택하는 음성 인식 모델과 말로 기록",
@@ -16,7 +16,8 @@
       ],
       "fixes": [
         "사용자가 시작한 AI 알림 작업의 백그라운드 진행 및 알림 표시",
-        "AI 사용 상태 표시와 홈 구성 개선"
+        "AI 사용 상태 표시와 홈 구성 개선",
+        "알림 목록에서 거래 확인 화면이 자동으로 겹치지 않도록 수정"
       ]
     },
     {
